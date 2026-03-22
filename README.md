@@ -3,7 +3,8 @@
 End-to-end hierarchical object detection for fine-grained grocery product recognition on retail shelf images. Built by Ryan Marinelli for NM i AI 2026 (Norway's National AI Championship), Task 3 — NorgesGruppen Data.
 
 # Deployment Strengthens
-This model is roughly 230MB. This is comparatively lightweight and acheived decent performance. The success of the model is depentent on how accuractely hierarchies are maintained. For example, coffee being in the warm drinks section and not in a breakfast section. 
+This model is roughly 230MB. This is comparatively lightweight and achieved decent performance for its size.
+The success of the model is depentent on how accuractely hierarchies are maintained. For example, coffee being in the warm drinks section and not in a breakfast section.
 
 # HuggingFace
 The model is available on Huggingface: https://huggingface.co/zrmarine/hierarchical-grocery-detector/tree/main
