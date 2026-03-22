@@ -2,6 +2,12 @@
 
 End-to-end hierarchical object detection for fine-grained grocery product recognition on retail shelf images. Built by Ryan Marinelli for NM i AI 2026 (Norway's National AI Championship), Task 3 — NorgesGruppen Data.
 
+# Deployment Strengthens
+This model is roughly 230MB. This is comparatively lightweight and acheived decent performance. The success of the model is depentent on how accuractely hierarchies are maintained. For example, coffee being in the warm drinks section and not in a breakfast section. 
+
+# HuggingFace
+The model is available on Huggingface: https://huggingface.co/zrmarine/hierarchical-grocery-detector/tree/main
+
 ## Overview
 
 Standard object detectors assign a single flat class label per detection. On a grocery shelf with hundreds of visually similar products this falls short — the model has no way to express that misidentifying a Nescafé variant is a less severe error than misidentifying it as a completely different brand.
@@ -160,6 +166,8 @@ Evaluated on held-out validation set using hierarchical F1 (Kiritchenko et al. 2
 | L1 accuracy (format) | 0.949 |
 | L2 accuracy (brand) | 0.926 |
 | L3 accuracy (product) | 0.884 |
+
+The mAP was .63 on unseen validation data for the challenge. 
 
 Training hardware: NVIDIA A100 (Google Colab Pro+), 248 training images.
 
